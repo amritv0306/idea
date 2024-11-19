@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>WELCOME</h1>
     </header>
     <nav>
@@ -22,8 +22,45 @@
         <section>
             <img src="image/img1.webp" alt="image" width="100%">
         </section>
-    </main>
+    </main> -->
+    <header>
+        <h1>Welcome to College Finder</h1>
+    </header>
 
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction">
+        <img src="image/img1.webp" alt="Introduction Photo" class="intro-photo">
+    </section>
+
+    <section id="search-section">
+        <h2>Search for Colleges</h2>
+        <input type="text" id="search-bar" placeholder="Type to search..." oninput="filterColleges()">
+        <ul id="college-list">
+            <li>National Institute of Technology Warangal</li>
+            <li>Indian Institute of Technology Bombay</li>
+            <li>Indian Institute of Technology Madras</li>
+            <li>Delhi Technological University</li>
+            <li>Birla Institute of Technology and Science Pilani</li>
+            <li>Vellore Institute of Technology</li>
+        </ul>
+    </section>
+
+    <script>
+        function filterColleges() {
+            const searchInput = document.getElementById("search-bar").value.toLowerCase();
+            const collegeList = document.getElementById("college-list").getElementsByTagName("li");
+            for (let college of collegeList) {
+                const text = college.textContent || college.innerText;
+                college.style.display = text.toLowerCase().includes(searchInput) ? "" : "none";
+            }
+        }
+    </script>
 
     
 </body>

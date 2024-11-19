@@ -1,4 +1,4 @@
-header {
+/* header {
     margin: 0mm;
     border: 0mm;
     padding: 40px;
@@ -21,4 +21,100 @@ nav a {
 
 h2 {
     align-self: center;
+} */
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: rgb(223, 92, 16);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: #343a40;
+    padding: 0.5rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Introduction Section */
+#introduction {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.intro-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Search Section */
+#search-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#college-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+#college-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    background: #fff;
+    cursor: pointer;
+}
+
+#college-list li:hover {
+    background: #007bff;
+    color: #fff;
 }
