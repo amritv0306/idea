@@ -25,6 +25,7 @@ h2 {
 
 
 /* General Styling */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,7 +37,7 @@ body {
 
 /* Header */
 header {
-    background: rgb(223, 92, 16);
+    background: #007bff;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -96,25 +97,35 @@ nav {
     border-radius: 5px;
 }
 
-#college-list {
-    list-style: none;
-    padding: 0;
+#college-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 1rem 0;
-    max-width: 400px;
-    margin: auto;
-    text-align: left;
+    gap: 15px;
 }
 
-#college-list li {
-    padding: 10px;
+.college-box {
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 5px 0;
     background: #fff;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
-#college-list li:hover {
+.college-box:hover {
+    transform: scale(1.05);
     background: #007bff;
     color: #fff;
+}
+
+/* No Results Message */
+#no-results {
+    font-size: 1.2rem;
+    color: red;
+    margin-top: 20px;
 }

@@ -41,27 +41,22 @@
     <section id="search-section">
         <h2>Search for Colleges</h2>
         <input type="text" id="search-bar" placeholder="Type to search..." oninput="filterColleges()">
-        <ul id="college-list">
-            <li>National Institute of Technology Warangal</li>
-            <li>Indian Institute of Technology Bombay</li>
-            <li>Indian Institute of Technology Madras</li>
-            <li>Delhi Technological University</li>
-            <li>Birla Institute of Technology and Science Pilani</li>
-            <li>Vellore Institute of Technology</li>
-        </ul>
+        <div id="college-container">
+            <div class="college-box">National Institute of Technology Warangal</div>
+            <div class="college-box">National Institute of Technology Trichy</div>
+            <div class="college-box">Indian Institute of Technology Bombay</div>
+            <div class="college-box">Indian Institute of Technology Madras</div>
+            <div class="college-box">Indian Institute of Technology Delhi</div>
+            <div class="college-box">Indian Institute of Technology Rorrkee</div>
+            <div class="college-box">Indian Institute of Technology Guwahati</div>
+            <div class="college-box">Delhi Technological University</div>
+            <div class="college-box">Birla Institute of Technology and Science Pilani</div>
+            <div class="college-box">Vellore Institute of Technology</div>
+        </div>
+        <p id="no-results" style="display: none;">Information about this college is yet to upload</p>
     </section>
 
-    <script>
-        function filterColleges() {
-            const searchInput = document.getElementById("search-bar").value.toLowerCase();
-            const collegeList = document.getElementById("college-list").getElementsByTagName("li");
-            for (let college of collegeList) {
-                const text = college.textContent || college.innerText;
-                college.style.display = text.toLowerCase().includes(searchInput) ? "" : "none";
-            }
-        }
-    </script>
-
+    <script src="new.js"></script>
     
 </body>
 </html>
