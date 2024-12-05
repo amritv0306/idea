@@ -16,3 +16,8 @@ function filterColleges() {
     const noResultsMessage = document.getElementById("no-results");
     noResultsMessage.style.display = matchFound ? "none" : "block";
 }
+
+let button = document.querySelector(".toTop");
+button.addEventListener("click" ,()=>{
+    window.scrollTo(0,0);
+});
